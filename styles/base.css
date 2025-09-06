@@ -68,6 +68,7 @@ header {
 }
 
 .course-title {
+  font-weight: var(--weight-bold);
   font-size: 1.5rem;
 }
 
@@ -111,14 +112,26 @@ header {
 main {
   max-width: 1500px;
   padding: 2rem 4rem;
+  background-color: var(--background);
+}
+
+.cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
   align-items: start;
-  background-color: var(--background);
 }
 
-h1,
+h1 {
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-bold);
+  font-size: 2.5rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 h2 {
   font-family: var(--font-DMSans);
   font-weight: var(--weight-bold);
