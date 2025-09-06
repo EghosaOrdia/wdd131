@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #6f2dbd;
+  --secondary: #a663cc;
+  --tertiary: #b298dc;
+  --background: #b8d0eb;
+  --accent: #b9faf8;
+  --font-DMSans: "DMSans", sans-serif;
+  --font-DMSansLight: "DMSansLight", sans-serif;
+  --font-DMSansSemibold: "DMSansSemibold", sans-serif;
+  --font-DMSansBold: "DMSansBold", sans-serif;
+  --font-MontserratAlt: "MontserratAlt", sans-serif;
+  --font-MontserratMedium: "MontserratAltMedium", sans-serif;
+  --font-MontserratSemibold: "MontserratAlt", sans-serif;
+  --font-MontserratBold: "MontserratAltBold", sans-serif;
+}
+
+/* Utilities */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+figcaption {
+  font-size: 1rem;
+  text-align: center;
+  font-family: var(--font-DMSansSemibold);
+}
+
+/* Main */
+body {
+  font-family: var(--font-DMSans);
+}
+
+header {
+  font-family: var(--font-MontserratAlt);
+}
+
+.course-info {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--background);
+}
+
+.course-title {
+  font-family: var(--font-MontserratBold);
+  font-size: 1.5rem;
+}
+
+.author {
+  font-family: var(--font-MontserratSemibold);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555;
+}
+
+.header-navigation {
+  background-color: #000;
+  padding: 1rem 4rem;
+}
+
+.header-navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 16px;
+  font-size: 1.25rem;
+}
+
+.header-navigation-list > li > a {
+  color: white;
+  font-family: var(--font-MontserratSemibold);
+}
+
+.header-navigation-list > li > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: start;
+  background-color: var(--background);
+}
+
+h1 {
+  font-family: var(--font-DMSansBold);
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.card-title {
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.content {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+}
+
+.underline {
+  display: inline-block;
+  border: solid var(--primary);
+  border-width: 0 0 2px 0;
+}
+
+.underline:hover {
+  border-width: 0 0 6px 0;
+}
+
+.highlight {
+  color: var(--tertiary);
+  font-family: var(--font-DMSansSemibold);
+}
+
+.highlight:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+
+.images-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+
+.footer-content {
+  padding: 2rem 4rem;
+}
+
+.footer-p {
+  font-size: 1.4rem;
+  font-family: var(--font-DMSansBold);
+  text-align: center;
+}
+
+.lastmodified {
+  margin-top: 1rem;
+  color: #555555;
+}
+
+/* Fonts */
+@font-face {
+  font-family: DMSansLight;
+  src: url("../fonts/DMSans-Light.ttf");
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../fonts/DMSans-Regular.ttf");
+}
+@font-face {
+  font-family: DMSansSemiBold;
+  src: url("../fonts/DMSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: DMSansBold;
+  src: url("../fonts/DMSans-Bold.ttf");
+}
+@font-face {
+  font-family: MontserratAlt;
+  src: url("../fonts/MontserratAlternates-Regular.ttf");
+}
+@font-face {
+  font-family: MontserratAltMedium;
+  src: url("../fonts/MontserratAlternates-Medium.ttf");
+}
+@font-face {
+  font-family: MontserratAltSemibold;
+  src: url("../fonts/MontserratAlternates-SemiBold.ttf");
+}
+@font-face {
+  font-family: MontserratAltBold;
+  src: url("../fonts/MontserratAlternates-Bold.ttf");
+}
