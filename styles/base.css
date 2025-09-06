@@ -99,6 +99,7 @@ header {
 }
 
 main {
+  max-width: 1500px;
   padding: 2rem 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -127,6 +128,24 @@ h1 {
 .content {
   font-size: 1.4rem;
   padding: 1rem 2rem;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.more-link {
+  font-size: 1.2rem;
+  font-family: var(--font-DMSansSemibold);
+  color: var(--primary);
+}
+
+.more-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .underline {
