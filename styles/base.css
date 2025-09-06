@@ -10,14 +10,15 @@
   --tertiary: #b298dc;
   --background: #b8d0eb;
   --accent: #b9faf8;
-  --font-DMSans: "DMSans", sans-serif;
-  --font-DMSansLight: "DMSansLight", sans-serif;
-  --font-DMSansSemibold: "DMSansSemibold", sans-serif;
-  --font-DMSansBold: "DMSansBold", sans-serif;
-  --font-MontserratAlt: "MontserratAlt", sans-serif;
-  --font-MontserratMedium: "MontserratAltMedium", sans-serif;
-  --font-MontserratSemibold: "MontserratAltSemibold", sans-serif;
-  --font-MontserratBold: "MontserratAltBold", sans-serif;
+
+  /* Fonts */
+  --font-DMSans: "DM Sans", sans-serif;
+  --font-MontserratAlt: "Montserrat Alternates", sans-serif;
+
+  /* Font weights */
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
 }
 
 /* Utilities */
@@ -45,16 +46,19 @@ figure {
 figcaption {
   font-size: 1rem;
   text-align: center;
-  font-family: var(--font-DMSansSemibold);
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-bold);
 }
 
 /* Main */
 body {
   font-family: var(--font-DMSans);
+  font-weight: var(--weight-regular);
 }
 
 header {
   font-family: var(--font-MontserratAlt);
+  font-weight: var(--weight-regular);
 }
 
 .course-info {
@@ -64,14 +68,19 @@ header {
 }
 
 .course-title {
-  font-family: var(--font-MontserratBold);
   font-size: 1.5rem;
 }
 
+.course-info-author {
+  font-family: var(--font-MontserratAlt);
+  font-weight: var(--weight-semibold);
+  font-size: 1.2rem;
+}
+
 .author {
-  font-family: var(--font-MontserratSemibold);
+  font-family: var(--font-MontserratAlt);
+  font-weight: var(--weight-semibold);
   font-size: 1rem;
-  font-weight: 400;
   color: #555555;
 }
 
@@ -90,7 +99,8 @@ header {
 
 .header-navigation-list > li > a {
   color: white;
-  font-family: var(--font-MontserratSemibold);
+  font-family: var(--font-MontserratAlt);
+  font-weight: var(--weight-semibold);
 }
 
 .header-navigation-list > li > a:hover {
@@ -108,9 +118,12 @@ main {
   background-color: var(--background);
 }
 
-h1 {
-  font-family: var(--font-DMSansBold);
+h1,
+h2 {
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-bold);
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .card {
@@ -139,7 +152,8 @@ h1 {
 
 .more-link {
   font-size: 1.2rem;
-  font-family: var(--font-DMSansSemibold);
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-semibold);
   color: var(--primary);
 }
 
@@ -160,7 +174,8 @@ h1 {
 
 .highlight {
   color: var(--tertiary);
-  font-family: var(--font-DMSansSemibold);
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-semibold);
 }
 
 .highlight:hover {
@@ -186,45 +201,12 @@ h1 {
 
 .footer-p {
   font-size: 1.4rem;
-  font-family: var(--font-DMSansBold);
+  font-family: var(--font-DMSans);
+  font-weight: var(--weight-bold);
   text-align: center;
 }
 
 .lastmodified {
   margin-top: 1rem;
   color: #555555;
-}
-
-/* Fonts */
-@font-face {
-  font-family: DMSansLight;
-  src: url("../fonts/DMSans-Light.ttf");
-}
-@font-face {
-  font-family: DMSans;
-  src: url("../fonts/DMSans-Regular.ttf");
-}
-@font-face {
-  font-family: DMSansSemiBold;
-  src: url("../fonts/DMSans-SemiBold.ttf");
-}
-@font-face {
-  font-family: DMSansBold;
-  src: url("../fonts/DMSans-Bold.ttf");
-}
-@font-face {
-  font-family: MontserratAlt;
-  src: url("../fonts/MontserratAlternates-Regular.ttf");
-}
-@font-face {
-  font-family: MontserratAltMedium;
-  src: url("../fonts/MontserratAlternates-Medium.ttf");
-}
-@font-face {
-  font-family: MontserratAltSemibold;
-  src: url("../fonts/MontserratAlternates-SemiBold.ttf");
-}
-@font-face {
-  font-family: MontserratAltBold;
-  src: url("../fonts/MontserratAlternates-Bold.ttf");
 }
