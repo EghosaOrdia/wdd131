@@ -148,7 +148,7 @@ h2 {
 .card-title {
   padding: 1rem 2rem;
   background-color: var(--secondary);
-  color: white;
+  color: #000;
 }
 
 .content {
@@ -186,7 +186,7 @@ h2 {
 }
 
 .highlight {
-  color: var(--tertiary);
+  color: var(--primary);
   font-family: var(--font-DMSans);
   font-weight: var(--weight-semibold);
 }
