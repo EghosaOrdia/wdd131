@@ -33,6 +33,11 @@ h1 {
   font-size: 32px;
   padding-top: 32px;
 }
+h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 32px;
+}
 figcaption {
   padding: 10px;
   font-weight: 500;
