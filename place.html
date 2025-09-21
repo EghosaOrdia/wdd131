@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD131 - Dynamic Web Fundamentals - Eghosa Ordia</title>
+    <meta name="author" content="Eghosa Ordia" />
+    <meta
+      name="description"
+      content="Eghosa Ordia -  BYU - WDD131 - Dynamic Web Fundamentals Home Page"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script defer src="scripts/place.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Gurara Waterfalls, Nigeria</h1>
+    </header>
+    <main>
+      <picture>
+        <source
+          srcset="images/gurara_waterfalls_medium.webp"
+          media="(max-width: 750px)"
+        />
+        <source
+          srcset="images/gurara_waterfalls_large.webp"
+          media="(max-width: 1500px)"
+        />
+        <img
+          src="images/gurara_waterfalls_small.webp"
+          alt="frontal view of gurara waterfalls By Wolex640 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59696183"
+        />
+      </picture>
+
+      <div class="data">
+        <h2>Data</h2>
+        <ul>
+          <li>
+            <span>Location: </span>
+            <span>Gurara, Niger State, Nigeria</span>
+          </li>
+          <li>
+            <span>Coordinates: </span>
+            <span>9.8565° N, 7.2091° E</span>
+          </li>
+          <li>
+            <span>Height: </span>
+            <span>Approx. 30 meters</span>
+          </li>
+          <li>
+            <span>Width: </span>
+            <span>Up to 200 meters during peak season</span>
+          </li>
+          <li>
+            <span>Nearest City: </span>
+            <span>Minna (about 75 km away)</span>
+          </li>
+          <li>
+            <span>Tourist Activities: </span>
+            <span
+              >Swimming (in designated areas), picnicking, hiking, photography,
+              cultural tours</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="weather">
+        <h2>Weather</h2>
+        <ul>
+          <li>
+            <span>Temperature: </span>
+            <span>28-32°C (typical daytime average)</span>
+          </li>
+          <li>
+            <span>Conditions: </span>
+            <span>Mostly Sunny (Dry season) / Humid & Rainy (Wet season)</span>
+          </li>
+          <li>
+            <span>Best Time to Visit: </span>
+            <span>August-October (for full, dramatic waterfalls)</span>
+          </li>
+          <li>
+            <span>Wind: </span>
+            <span>~10 km/h (varies with season)</span>
+          </li>
+          <li>
+            <span>Humidity: </span>
+            <span>60-85%</span>
+          </li>
+          <li>
+            <span>Rainfall: </span>
+            <span>(in wet season): ~200 mm/month</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p class="footer-p">
+        &copy;<span id="currentyear"></span> Eghosa Ordia from Edo State
+      </p>
+      <p id="lastmodified" class="footer-p lastmodified"></p>
+    </footer>
+  </body>
+</html>
