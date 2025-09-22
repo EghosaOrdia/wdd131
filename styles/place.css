@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 :root {
-  --font: "Poppins", sans-serif;
   --font-normal: 400;
   --font-bold: 700;
   --color-primary: #f9db6d;
@@ -16,7 +15,7 @@
 body,
 button,
 input {
-  font-family: var(--font);
+  font-family: "Poppins", sans-serif;
   font-weight: var(--font-normal);
   font-style: normal;
 }
