@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 :root {
-  --font-normal: 400;
-  --font-bold: 700;
   --color-primary: #f9db6d;
   --color-accent: #f4eded;
 }
@@ -16,7 +14,7 @@ body,
 button,
 input {
   font-family: "Poppins", sans-serif;
-  font-weight: var(--font-normal);
+  font-weight: 400;
   font-style: normal;
 }
 a {
@@ -55,7 +53,7 @@ ul {
   gap: 8px;
 }
 ul > li > span:first-child {
-  font-weight: bold;
+  font-weight: 700;
 }
 main {
   position: relative;
@@ -81,6 +79,6 @@ footer {
 }
 .footer-p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
 }
