@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album project</title>
+    <meta name="author" content="Eghosa Ordia WDD131">
+    <meta
+      name="description"
+      content="WDD131 Temples Page Learning about working with JavaScript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+     <script defer src="scripts/temples.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="header-main">Temple Album</a>
+      <nav>
+        <ul class="header-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+
+        <button class="toggle-btn" id="toggleBtn">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+
+        <ul class="header-links-sm" id="dropDownLinks">
+          <li>Home</li>
+          <li>Old</li>
+          <li>New</li>
+          <li>Large</li>
+          <li>Small</li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Temple Albums</h1>
+    <main>
+        <h2>Temple Images</h2>
+      <div class="temple-images">
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-p">
+        &copy;<span id="currentyear"></span> Eghosa Ordia from Edo State
+      </p>
+      <p id="lastmodified" class="footer-p lastmodified"></p>
+    </footer>
+  </body>
+</html>
