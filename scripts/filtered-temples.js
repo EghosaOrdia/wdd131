@@ -81,7 +81,7 @@ const createTemples = (templeList) => {
   imageContainer.innerHTML = "";
   templeList.forEach((templeEl) => {
     const templeCard = document.createElement("div");
-    templeCard.className = "temple-card";
+    templeCard.setAttribute("class", "temple-card");
 
     // title
     const title = document.createElement("h2");

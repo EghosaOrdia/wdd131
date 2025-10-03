@@ -161,9 +161,6 @@ main {
   border: none;
   color: #fff;
 }
-.zoom-in {
-  animation: zoomIn 0.5s ease-out forwards;
-}
 
 @keyframes zoomIn {
   0% {
