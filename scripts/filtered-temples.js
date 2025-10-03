@@ -72,36 +72,39 @@ toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("active");
 });
 
-temples.forEach((templeEl) => {
-  const templeCard = document.createElement("div");
-  templeCard.className = "temple-card";
+const createTemples = () => {
+  temples.forEach((templeEl) => {
+    const templeCard = document.createElement("div");
+    templeCard.className = "temple-card";
 
-  // title
-  const title = document.createElement("h2");
-  title.textContent = templeEl.templeName;
+    // title
+    const title = document.createElement("h2");
+    title.textContent = templeEl.templeName;
 
-  // image
-  const figure = document.createElement("figure");
-  const image = document.createElement("img");
-  image.src = templeEl.imageUrl;
-  image.alt = `temple at ${templeEl.templeName}`;
-  image.loading = "lazy";
+    // image
+    const figure = document.createElement("figure");
+    const image = document.createElement("img");
+    image.setAttribute("src", templeEl.imageUrl);
+    image.setAttribute("alt", `temple at ${templeEl.templeName}`);
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("class", "temple-card-image");
 
-  const locationP = document.createElement("p");
-  locationP.innerHTML = `<span> LOCATION: </span> <span>${templeEl.location}</span>`;
+    const locationP = document.createElement("p");
+    locationP.innerHTML = `<span> LOCATION: </span> <span>${templeEl.location}</span>`;
 
-  const dedicatedP = document.createElement("p");
-  dedicatedP.innerHTML = `<span> DEDICATED: </span> <span>${templeEl.dedicated}</span>`;
+    const dedicatedP = document.createElement("p");
+    dedicatedP.innerHTML = `<span> DEDICATED: </span> <span>${templeEl.dedicated}</span>`;
 
-  const sizeP = document.createElement("p");
-  sizeP.innerHTML = `<span> SIZE: </span> <span>${templeEl.area} sq ft</span>`;
+    const sizeP = document.createElement("p");
+    sizeP.innerHTML = `<span> SIZE: </span> <span>${templeEl.area} sq ft</span>`;
 
-  templeCard.appendChild(title);
-  templeCard.appendChild(locationP);
-  templeCard.appendChild(dedicatedP);
-  templeCard.appendChild(sizeP);
-  figure.appendChild(image);
-  templeCard.appendChild(figure);
+    templeCard.appendChild(title);
+    templeCard.appendChild(locationP);
+    templeCard.appendChild(dedicatedP);
+    templeCard.appendChild(sizeP);
+    figure.appendChild(image);
+    templeCard.appendChild(figure);
 
-  imageContainer.appendChild(templeCard);
-});
+    imageContainer.appendChild(templeCard);
+  });
+};
