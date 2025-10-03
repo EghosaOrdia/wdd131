@@ -65,6 +65,11 @@ const temples = [
   // Add more temple objects here...
 ];
 
+// utility function
+const getYear = (temple) => {
+  return parseInt(temple.split(",")[0].trim());
+};
+
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = document.lastModified;
 toggleBtn.addEventListener("click", function () {
@@ -72,8 +77,9 @@ toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("active");
 });
 
-const createTemples = () => {
-  temples.forEach((templeEl) => {
+const createTemples = (templeList) => {
+  imageContainer.innerHTML = "";
+  templeList.forEach((templeEl) => {
     const templeCard = document.createElement("div");
     templeCard.className = "temple-card";
 
@@ -108,3 +114,39 @@ const createTemples = () => {
     imageContainer.appendChild(templeCard);
   });
 };
+
+createTemples(temples);
+
+const toggleSize = (button) => {
+  let filteredlist;
+  switch (button) {
+    case "old":
+      filteredlist = temples.filter(
+        (temple) => getYear(temple.dedicated) <= 1900
+      );
+      break;
+    case "new":
+      filteredlist = temples.filter(
+        (temple) => getYear(temple.dedicated) >= 2000
+      );
+      break;
+    case "large":
+      filteredlist = temples.filter((temple) => temple.area > 90000);
+      break;
+    case "small":
+      filteredlist = temples.filter((temple) => temple.area < 10000);
+      break;
+    case "home":
+      filteredlist = temples;
+      break;
+  }
+  console.log(filteredlist);
+  console.log(button);
+
+  createTemples(filteredlist);
+};
+
+//  templeName: "Aba Nigeria",
+//     location: "Aba, Nigeria",
+//     dedicated: "2005, August, 7",
+//     area: 11500,
