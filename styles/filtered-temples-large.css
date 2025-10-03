@@ -1,0 +1,22 @@
+@media screen and (min-width: 500px) {
+  header {
+    padding: 24px 36px;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  .temple-images {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 24px 72px;
+  }
+}

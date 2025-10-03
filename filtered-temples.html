@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
     <script defer src="scripts/filtered-temples.js"></script>
   </head>
   <body>
@@ -23,11 +24,21 @@
       <a href="#" class="header-main">Temple Album</a>
       <nav>
         <ul class="header-links">
-          <li><button onclick="toggleSize()">Home</button></li>
-          <li><button onclick="toggleSize()">Old</button></li>
-          <li><button onclick="toggleSize()">New</button></li>
-          <li><button onclick="toggleSize()">Large</button></li>
-          <li><button onclick="toggleSize()">Small</button></li>
+          <li>
+            <button class="web-filter" onclick="toggleSize()">Home</button>
+          </li>
+          <li>
+            <button class="web-filter" onclick="toggleSize()">Old</button>
+          </li>
+          <li>
+            <button class="web-filter" onclick="toggleSize()">New</button>
+          </li>
+          <li>
+            <button class="web-filter" onclick="toggleSize()">Large</button>
+          </li>
+          <li>
+            <button class="web-filter" onclick="toggleSize()">Small</button>
+          </li>
         </ul>
 
         <button class="toggle-btn" id="toggleBtn">
@@ -37,11 +48,21 @@
         </button>
 
         <ul class="header-links-sm" id="dropDownLinks">
-          <li>Home</li>
-          <li>Old</li>
-          <li>New</li>
-          <li>Large</li>
-          <li>Small</li>
+          <li>
+            <button class="mobile-filter" onclick="toggleSize()">Home</button>
+          </li>
+          <li>
+            <button class="mobile-filter" onclick="toggleSize()">Old</button>
+          </li>
+          <li>
+            <button class="mobile-filter" onclick="toggleSize()">New</button>
+          </li>
+          <li>
+            <button class="mobile-filter" onclick="toggleSize()">Large</button>
+          </li>
+          <li>
+            <button class="mobile-filter" onclick="toggleSize()">Small</button>
+          </li>
         </ul>
       </nav>
     </header>

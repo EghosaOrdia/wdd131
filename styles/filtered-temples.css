@@ -148,6 +148,11 @@ main {
   border-radius: 8px;
   text-align: center;
 }
+.web-filter {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
 
 /* =========================
    Footer
