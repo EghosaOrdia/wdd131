@@ -85,6 +85,7 @@ temples.forEach((templeEl) => {
   const image = document.createElement("img");
   image.src = templeEl.imageUrl;
   image.alt = `temple at ${templeEl.templeName}`;
+  image.loading = "lazy";
 
   const locationP = document.createElement("p");
   locationP.innerHTML = `<span> LOCATION: </span> <span>${templeEl.location}</span>`;
