@@ -119,13 +119,13 @@ const createTemples = (templeList) => {
     image.setAttribute("class", "temple-card-image");
 
     const locationP = document.createElement("p");
-    locationP.innerHTML = `<span> LOCATION: </span> <span>${templeEl.location}</span>`;
+    locationP.innerHTML = `<span class='temple-label'> LOCATION: </span> <span>${templeEl.location}</span>`;
 
     const dedicatedP = document.createElement("p");
-    dedicatedP.innerHTML = `<span> DEDICATED: </span> <span>${templeEl.dedicated}</span>`;
+    dedicatedP.innerHTML = `<span class='temple-label'> DEDICATED: </span> <span>${templeEl.dedicated}</span>`;
 
     const sizeP = document.createElement("p");
-    sizeP.innerHTML = `<span> SIZE: </span> <span>${templeEl.area} sq ft</span>`;
+    sizeP.innerHTML = `<span class='temple-label'> SIZE: </span> <span>${templeEl.area} sq ft</span>`;
 
     templeCard.appendChild(title);
     templeCard.appendChild(locationP);

@@ -91,6 +91,10 @@ header {
   color: #fff;
   font-weight: 500;
 }
+.temple-label {
+  color: #420039;
+  font-weight: 700;
+}
 /* =========================
    Hamburger Toggle Button
    ========================= */
