@@ -62,7 +62,30 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
-  // Add more temple objects here...
+  {
+    templeName: "Antofagasta Chile",
+    location: "Antofagasta, Chile",
+    dedicated: "2025, June, 15",
+    area: 26163,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/antofagasta-chile-temple/antofagasta-chile-temple-60193-main.jpg",
+  },
+  {
+    templeName: "McAllen Texas",
+    location: "McAllen, Texas",
+    dedicated: "2023, October, 8",
+    area: 27897,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/mcallen-texas-temple/mcallen-texas-temple-11428-thumb.jpg",
+  },
+  {
+    templeName: "Nairobi, Kenya",
+    location: "Nairobi, Kenya",
+    dedicated: "2025, May, 18",
+    area: 19870,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60488-main.jpg",
+  },
 ];
 
 // utility function

@@ -80,13 +80,17 @@ header {
   flex-direction: column;
   gap: 8px;
   padding: 16px;
-  background-color: #555555;
+  background-color: #111;
   color: #fff;
+  z-index: 10;
 }
 .header-links-sm.active {
   display: flex;
 }
-
+.mobile-filter {
+  color: #fff;
+  font-weight: 500;
+}
 /* =========================
    Hamburger Toggle Button
    ========================= */
@@ -138,7 +142,7 @@ main {
 }
 .temple-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 36px 16px;
   padding: 24px 36px;
 }
