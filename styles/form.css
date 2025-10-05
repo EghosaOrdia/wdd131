@@ -179,3 +179,11 @@ button:hover {
   font-style: italic;
   font-weight: var(--weight-regular);
 }
+
+/* ========== Media Queries ========== */
+@media screen and (min-width: 500px) {
+  form {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
