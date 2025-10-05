@@ -112,14 +112,13 @@ button {
   font-optical-sizing: auto;
   font-weight: var(--weight-medium);
   font-style: normal;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: var(--primary);
   transform: scale(1.02);
 }
 
@@ -162,7 +161,7 @@ button:hover {
 }
 
 .reviewspan {
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 0.8rem;
   font-style: italic;
   font-weight: var(--weight-regular);
