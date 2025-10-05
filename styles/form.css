@@ -1,0 +1,169 @@
+:root {
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --primary: #6f2dbd;
+  --secondary: #a663cc;
+  --accent: #b298dc;
+}
+
+/* ========== Global Reset & Base Styles ========== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--weight-regular);
+  font-style: normal;
+}
+
+/* ========== Layout Containers ========== */
+header {
+  padding: 16px 24px;
+  position: relative;
+  background-color: #420039;
+  color: #ccad8f;
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--weight-semibold);
+}
+
+main {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #eee;
+}
+
+footer {
+  padding: 16px;
+  background-color: #420039;
+  color: #fff;
+}
+
+.footer-p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.lastmodified {
+  margin-top: 10px;
+}
+
+/* ========== Form ========== */
+form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-control > label {
+  font-size: 1.1rem;
+  font-weight: var(--weight-medium);
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid var(--secondary);
+}
+
+input[type="radio"] {
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+/* ========== Button ========== */
+button {
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--weight-medium);
+  font-style: normal;
+  background-color: var(--secondary);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary);
+  transform: scale(1.02);
+}
+
+/* ========== Rating System ========== */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.rating > label {
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+.rating > label:hover {
+  color: #000;
+}
+
+.rating > label::before {
+  content: "\2606"; /* empty star */
+}
+
+.rating input:checked ~ label::before {
+  content: "\2605"; /* filled star */
+}
+
+/* ========== Inline Spans ========== */
+.productspan {
+  display: block;
+  font-weight: var(--weight-regular);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.reviewspan {
+  color: var(--secondary);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: var(--weight-regular);
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form Page</title>
+    <meta name="author" content="Eghosa Ordia WDD131">
+    <meta name="description" content="Page to submit product reviews">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script defer src="scripts/form.js"></script>
+  </head>
+  <body>
+    <header>Product Review</header>
+
+    <main>
+      <form method="get" action="review.html">
+        <div class="form-control">
+          <label for="productname">Product Name</label>
+          <select
+            required
+            name="productname"
+            id="productName"
+            class="product-name"
+          >
+            <option disabled selected>Choose a product...</option>
+          </select>
+        </div>
+
+        <!-- Rating -->
+        <div class="form-control">
+          <label for="productname">Overall Rating</label>
+          <div class="rating">
+            <input type="radio" name="stars" id="onestar">
+            <label for="onestar"></label>
+            <input type="radio" name="stars" id="twostar">
+            <label for="twostar"></label>
+            <input type="radio" name="stars" id="threestar">
+            <label for="threestar"></label>
+            <input type="radio" name="stars" id="fourstar">
+            <label for="fourstar"></label>
+            <input type="radio" name="stars" id="fivestar">
+            <label for="fivestar"></label>
+          </div>
+        </div>
+
+        <!-- Installation Date -->
+        <div class="form-control">
+          <label for="productname">Date of Installation</label>
+          <input
+            required
+            type="date"
+            name="installationdate"
+            id="installationDate"
+            class="installation-date"
+         >
+        </div>
+
+        <!-- features -->
+        <div class="form-control">
+          <label for="productname"
+            >Which features did you find useful in the products?
+            <span class="productspan">Check all that apply</span></label
+          >
+
+          <div class="options">
+            <div class="option">
+              <input type="checkbox" name="durability" id="durability">
+              <label for="durability">Durability</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="ease" id="ease">
+              <label for="ease">Ease of use</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="performance" id="performance">
+              <label for="performance">Performance</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="design" id="design">
+              <label for="design">Design</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Written Review -->
+        <div class="form-control">
+          <label for="review"
+            >Written Review <span class="reviewspan">(optional)</span></label
+          >
+          <textarea name="review" id="review"></textarea>
+        </div>
+
+        <!-- Your Name -->
+        <div class="form-control">
+          <label for="name"
+            >Your Name <span class="reviewspan">(optional)</span></label
+          >
+          <input type="text" name="name" id="name">
+        </div>
+
+        <div class="form-control">
+          <button type="submit" id="postbutton">Post Review</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p class="footer-p">
+        &copy;<span id="currentyear"></span> Eghosa Ordia from Edo State
+      </p>
+      <p id="lastmodified" class="footer-p lastmodified"></p>
+    </footer>
+  </body>
+</html>
