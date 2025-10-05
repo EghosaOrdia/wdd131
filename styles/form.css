@@ -101,6 +101,22 @@ input[type="radio"] {
   caret-color: rgba(0, 0, 0, 0);
 }
 
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
 /* ========== Button ========== */
 button {
   padding: 16px;
