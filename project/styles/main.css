@@ -20,18 +20,22 @@ textarea {
   font-weight: var(--weight-normal);
   font-style: normal;
 }
-main {
-  padding: var(--paddingLg);
-}
+
 img {
   width: 100%;
 }
 /* ==== Header Content ==== */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: var(--paddingLg);
+  padding: var(--paddingLg) 4rem;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .nav-links {
   list-style: none;
@@ -39,9 +43,13 @@ header {
   gap: 1rem;
   align-items: center;
 }
-.nav-links a {
+.navlinks-a {
   font-weight: var(--weight-medium);
   color: #000;
+}
+.navlinks-a:hover {
+  transition: color 0.3s ease;
+  color: #db0827;
 }
 .quote {
   background-color: var(--color-bg);
@@ -52,12 +60,26 @@ header {
 }
 
 /* ==== Main ==== */
+.hero {
+  background-image: url("../images/brands/bg.webp");
+  position: relative;
+  padding: var(--paddingLg) 4rem;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 88, 88, 0.8);
+  z-index: 1;
+}
 .hero-text {
   text-align: left;
   font-family: var(--font-alan);
 }
 .hero-text p {
-  color: #444;
+  color: #111;
   margin-top: 16px;
 }
 .hero-img {
@@ -74,14 +96,45 @@ header {
   border-radius: 32px;
   margin-top: 24px;
 }
-.hero {
+.hero-main {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 32px;
+  margin-top: 8rem;
   justify-content: space-around;
   text-align: center;
-  padding: var(--paddingLg);
+  z-index: 2;
 }
 .hero > div {
   flex: 1;
+}
+.brands {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #eee;
+  border-radius: 32px;
+  padding: 0.7rem 2rem;
+  margin-top: 2rem;
+  z-index: 4;
+}
+.brands img {
+  max-width: 80px;
+  height: auto;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+.aboutus {
+  margin-top: 8rem;
+}
+.abouth2 {
+  font-size: 12px;
+}
+.aboutspan {
+  font-weight: var(--weight-medium);
+  font-size: 24px;
 }
