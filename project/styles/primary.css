@@ -3,7 +3,7 @@
   --color-bg: #2e382e;
   --color-bg2: #111;
   --color-accent: #ddc67b;
-  --color-accent: #5603ad;
+  --color-accent2: #5603ad;
   /* Font weights */
   --weight-normal: 400;
   --weight-medium: 500;
@@ -13,6 +13,9 @@
   --paddingLg: 2rem;
   --paddingMd: 1.5rem;
   --paddingSm: 1rem;
+
+  --font-alan: "Alan Sans", sans-serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
 }
 * {
   padding: 0;
@@ -21,7 +24,7 @@
 }
 
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-alan);
   font-weight: var(--weight-normal);
   font-style: normal;
 }

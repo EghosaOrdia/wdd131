@@ -3,13 +3,11 @@
 h1 {
   font-size: 2.5rem;
   font-weight: var(--weight-bold);
-  color: var(--color-primary);
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: var(--weight-bold);
-  color: var(--color-primary);
 }
 a {
   text-decoration: none;
@@ -18,14 +16,16 @@ button,
 input,
 select,
 textarea {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-alan);
   font-weight: var(--weight-normal);
   font-style: normal;
 }
 main {
   padding: var(--paddingLg);
 }
-
+img {
+  width: 100%;
+}
 /* ==== Header Content ==== */
 header {
   display: flex;
@@ -52,3 +52,36 @@ header {
 }
 
 /* ==== Main ==== */
+.hero-text {
+  text-align: left;
+  font-family: var(--font-alan);
+}
+.hero-text p {
+  color: #444;
+  margin-top: 16px;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.hero-btn {
+  background-color: var(--color-accent);
+  border: none;
+  font-size: 18px;
+  font-weight: var(--weight-medium);
+  padding: 8px 24px;
+  border-radius: 32px;
+  margin-top: 24px;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-around;
+  text-align: center;
+  padding: var(--paddingLg);
+}
+.hero > div {
+  flex: 1;
+}
