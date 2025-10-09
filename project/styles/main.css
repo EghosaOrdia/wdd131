@@ -1,7 +1,10 @@
 @import url("primary.css");
 
+/* =========================
+  Layout styles 
+  ========================= */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: var(--weight-bold);
 }
 
@@ -24,23 +27,27 @@ textarea {
 img {
   width: 100%;
 }
-/* ==== Header Content ==== */
+
+/* =========================
+  Header styles 
+  ========================= */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 4rem;
+  padding: 1rem 4rem;
   z-index: 10;
 }
 .top-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 2rem;
   justify-content: space-between;
-
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  border-radius: 16px;
 }
 .nav-links {
   list-style: none;
@@ -56,7 +63,7 @@ header {
   transition: color 0.3s ease;
   color: #db0827;
 }
-.quote {
+.quote-nav-btn {
   background-color: var(--color-bg);
   color: #fff;
   padding: 10px 24px;
@@ -64,32 +71,11 @@ header {
   border-radius: 20px;
 }
 
-/* ==== Main ==== */
+/* =========================
+  Hero styles 
+  ========================= */
 .hero {
   padding: var(--paddingLg) 4rem;
-}
-
-.hero-text {
-  text-align: left;
-  font-family: var(--font-alan);
-}
-.hero-text p {
-  color: #111;
-  margin-top: 16px;
-}
-.hero-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-.hero-btn {
-  background-color: var(--color-accent);
-  border: none;
-  font-size: 18px;
-  font-weight: var(--weight-medium);
-  padding: 8px 24px;
-  border-radius: 32px;
-  margin-top: 24px;
 }
 .hero-main {
   position: relative;
@@ -101,8 +87,30 @@ header {
   text-align: center;
   z-index: 2;
 }
-.hero > div {
+.hero-main > div {
   flex: 1;
+}
+.hero-text {
+  text-align: left;
+  font-family: var(--font-alan);
+}
+.hero-text p {
+  color: #555;
+  margin-top: 16px;
+  font-size: 1rem;
+}
+.hero-btn {
+  background-color: var(--color-accent);
+  border: none;
+  font-size: 1rem;
+  padding: 8px 24px;
+  border-radius: 32px;
+  margin-top: 24px;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 .brands {
   position: relative;
@@ -123,6 +131,9 @@ header {
   opacity: 0.8;
   filter: grayscale(100%);
 }
+/* =========================
+  About styles 
+  ========================= */
 .aboutus {
   margin-top: 8rem;
 }
