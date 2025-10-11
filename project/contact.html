@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eghosa Ordia">
+    <meta
+      name="description"
+      content="Contact Page for Apex Repairs: Get your personal computers and playstations fixed with ease and by reputable technicians."
+   >
+    <title>Apex Repairs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.min.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <script defer src="scripts/formSubmit.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">
+        <img
+          loading="lazy"
+          src="images/logo.png"
+          alt="apex repairs logo"
+          width="100"
+       >
+      </a>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="messages.html">Messages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="contact.html">Contact us</a>
+        <a href="#quote" class="cta-button">Get a Quote</a>
+      </nav>
+
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <form method="get" action="contact.html">
+        <div class="form-heading">
+          <h1>Contact us</h1>
+          <p>Let us know how we can serve you</p>
+        </div>
+
+        <!-- Your Name -->
+        <div class="form-control">
+          <label class="form-control-label" for="name">Your Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <!-- Written Review -->
+        <div class="form-control">
+          <div class="control-heading">
+            <label class="form-control-label" for="review">Fault</label>
+            <p class="form-control-p">
+              Write in as much detail as you can what the problem is with your
+              device
+            </p>
+          </div>
+
+          <textarea name="review" id="review" required></textarea>
+        </div>
+
+        <!-- features -->
+        <div class="form-control">
+          <label class="form-control-label"
+            >What additional services will you be requiring?
+            <span class="productspan">Check all that apply</span></label
+          >
+
+          <div class="options">
+            <div class="option">
+              <input type="checkbox" name="Upgrade" id="upgrade">
+              <label for="Upgrade">Upgrade</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="servicing" id="servicing">
+              <label for="servicing">Servicing</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="replacement" id="replacement">
+              <label for="replacement">Replacement of parts</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" name="refurbishing" id="refurbishing">
+              <label for="refurbishing">Refurbishing</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <button type="submit" id="postbutton" class="submit-button">
+            Send
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#quote">Contact us</a>
+        </div>
+        <div class="footer-copyright">
+          © 2025 Apex Repairs. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

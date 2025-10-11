@@ -1,0 +1,27 @@
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .carousel-item {
+    min-width: 220px;
+    height: 220px;
+  }
+
+  .services-grid,
+  .gallery-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 1rem;
+  }
+  .carousel-item {
+    min-width: 40px;
+    height: 20px;
+  }
+  .messages {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
